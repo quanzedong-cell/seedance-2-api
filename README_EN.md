@@ -1,12 +1,31 @@
 # Seedance 2.0 Enterprise API
 
-[中文](README.md) | [Live offer](https://quanzedong-cell.github.io/seedance-2-api/en/) | [Contact sales](https://t.me/zexitongxue1)
+[中文](README.md) | [API docs](https://zexitongxue.com/docs/video-api.html?utm_source=github&utm_medium=repository&utm_campaign=seedance2_api) | [Live offer](https://quanzedong-cell.github.io/seedance-2-api/en/) | [Contact sales](https://t.me/zexitongxue1)
 
 ![Seedance 2.0 video generation showcase](docs/assets/seedance-showcase.jpg)
 
 Seedance 2.0 video generation API access for businesses, studios, and product teams.
 
 > Mainland China pricing is **80% of the applicable Volcengine public list price**. Overseas pricing is **85% of the applicable regional public list price**. Business invoicing and settlement documentation are supported.
+
+## Quick start
+
+List the currently available video models:
+
+```bash
+curl 'https://zexitongxue.com/ai-api/models?type=video'
+```
+
+Submit a Seedance 2.0 video task:
+
+```bash
+curl -X POST 'https://zexitongxue.com/v1/videos' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{"model":"doubao-seedance-2-0-720p","prompt":"A blue sports car driving along a coastal road at sunrise","aspect_ratio":"16:9","duration":5}'
+```
+
+See the [video generation API documentation](https://zexitongxue.com/docs/video-api.html?utm_source=github&utm_medium=repository&utm_campaign=seedance2_api) for reference inputs, parameters, and task polling.
 
 ## Commercial plans
 
@@ -35,7 +54,8 @@ Discounts use the public list price for the selected region, model, and specific
 
 ## Contact
 
-- Website: [zexitongxue.com](https://zexitongxue.com/)
+- Website: [zexitongxue.com](https://zexitongxue.com/?utm_source=github&utm_medium=repository&utm_campaign=seedance2_api)
+- Discord: [Zexi Seedance 2.0 Community](https://discord.gg/d9d8KNa95R)
 - Telegram: [@zexitongxue1](https://t.me/zexitongxue1)
 
 For a faster quote, include your region, estimated monthly volume, text-to-video or image-to-video workflow, and target resolution.
@@ -43,5 +63,7 @@ For a faster quote, include your region, estimated monthly volume, text-to-video
 ## Trademark notice
 
 This service is provided by Zexi. Seedance, Volcengine, and related trademarks belong to their respective owners. This repository is not an official Volcengine account or repository. References to discounts describe pricing relative to the applicable public list price.
+
+[Commercial terms](TERMS.md)
 
 Copyright 2026 Zexi. All rights reserved.

@@ -1,8 +1,14 @@
 blank_issues_enabled: false
 contact_links:
   - name: 企业接入咨询
-    url: https://zexitongxue.com/
+    url: https://zexitongxue.com/?utm_source=github&utm_medium=issue-template&utm_campaign=seedance2_api
     about: 获取 Seedance 2.0 模型、价格、测试额度和开票方案
+  - name: API 文档
+    url: https://zexitongxue.com/docs/video-api.html?utm_source=github&utm_medium=issue-template&utm_campaign=seedance2_api
+    about: 查看视频模型、请求参数、参考素材和任务查询方式
+  - name: Discord 社区
+    url: https://discord.gg/d9d8KNa95R
+    about: 加入泽西 Seedance 2.0 创作社区
   - name: Overseas sales
     url: https://t.me/zexitongxue1
     about: Contact sales for regional pricing and integration

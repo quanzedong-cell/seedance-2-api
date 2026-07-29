@@ -1,12 +1,31 @@
 # Seedance 2.0 企业级 API
 
-[English](README_EN.md) | [在线方案](https://quanzedong-cell.github.io/seedance-2-api/) | [咨询接入](https://zexitongxue.com/)
+[English](README_EN.md) | [API 文档](https://zexitongxue.com/docs/video-api.html?utm_source=github&utm_medium=repository&utm_campaign=seedance2_api) | [在线方案](https://quanzedong-cell.github.io/seedance-2-api/) | [咨询接入](https://zexitongxue.com/?utm_source=github&utm_medium=repository&utm_campaign=seedance2_api)
 
 ![Seedance 2.0 视频生成展示](docs/assets/seedance-showcase.jpg)
 
 面向企业、工作室与开发团队的 Seedance 2.0 视频生成 API 接入服务。
 
 > 中国大陆按火山引擎官方公开价的 **8 折**，海外按对应官方公开价的 **85 折**。支持按合同开具增值税专用发票，不另收开票服务费。
+
+## 快速开始
+
+查询当前可用的视频模型：
+
+```bash
+curl 'https://zexitongxue.com/ai-api/models?type=video'
+```
+
+提交 Seedance 2.0 视频任务：
+
+```bash
+curl -X POST 'https://zexitongxue.com/v1/videos' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{"model":"doubao-seedance-2-0-720p","prompt":"清晨海边公路，一辆蓝色跑车沿海岸平稳行驶","aspect_ratio":"16:9","duration":5}'
+```
+
+完整参数、参考素材和任务查询方式见[视频生成 API 文档](https://zexitongxue.com/docs/video-api.html?utm_source=github&utm_medium=repository&utm_campaign=seedance2_api)。
 
 ## 商务方案
 
@@ -35,7 +54,8 @@
 
 ## 联系
 
-- 官网：[zexitongxue.com](https://zexitongxue.com/)
+- 官网：[zexitongxue.com](https://zexitongxue.com/?utm_source=github&utm_medium=repository&utm_campaign=seedance2_api)
+- Discord 社区：[泽西 Seedance 2.0 创作社区](https://discord.gg/d9d8KNa95R)
 - Telegram：[@zexitongxue1](https://t.me/zexitongxue1)
 
 咨询时请注明地区、预计月用量、文生视频或图生视频需求，以及目标分辨率，便于快速报价。
@@ -43,5 +63,7 @@
 ## 品牌声明
 
 本服务由泽西同学提供。Seedance、火山引擎及相关商标归各自权利人所有；本项目不代表火山引擎官方账号或官方仓库。页面中的“官方价折扣”是相对于对应官方公开价格的计价说明。
+
+[商务说明](TERMS.md)
 
 Copyright 2026 泽西同学. All rights reserved.
