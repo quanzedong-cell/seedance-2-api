@@ -6,7 +6,7 @@
 
 Seedance 2.0 video generation API access for businesses, studios, and product teams.
 
-> Mainland China pricing is **80% of the applicable Volcengine public list price**. Overseas pricing is **85% of the applicable regional public list price**. Business invoicing and settlement documentation are supported.
+> Mainland China pricing is **70% of the applicable Volcengine public list price**. Overseas pricing is **80% of the applicable regional public list price**. Business invoicing and settlement documentation are supported.
 
 ## Quick start
 
@@ -20,7 +20,7 @@ Submit a Seedance 2.0 video task:
 
 ```bash
 curl -X POST 'https://zexitongxue.com/v1/videos' \
-  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Authorization: Bearer <API_KEY>' \
   -H 'Content-Type: application/json' \
   -d '{"model":"doubao-seedance-2-0-720p","prompt":"A blue sports car driving along a coastal road at sunrise","aspect_ratio":"16:9","duration":5}'
 ```
@@ -31,8 +31,8 @@ See the [video generation API documentation](https://zexitongxue.com/docs/video-
 
 | Region | Pricing basis | Documentation | Best for |
 | --- | --- | --- | --- |
-| Mainland China | Applicable Volcengine public list price x 0.80 | VAT special invoice | Companies, commerce, studios, developer teams |
-| Overseas | Applicable regional public list price x 0.85 | Business settlement documents | Global apps, cross-border teams, international products |
+| Mainland China | Applicable Volcengine public list price x 0.70 | VAT special invoice | Companies, commerce, studios, developer teams |
+| Overseas | Applicable regional public list price x 0.80 | Business settlement documents | Global apps, cross-border teams, international products |
 
 Discounts use the public list price for the selected region, model, and specification on the quotation date. Final pricing, tax treatment, quota, and billing cycle are governed by the confirmed quotation and contract.
 
